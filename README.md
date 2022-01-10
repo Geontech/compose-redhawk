@@ -26,6 +26,15 @@ docker-compose --version
 
 Optionally, install the bash command completion with the instructions [here](https://docs.docker.com/compose/completion/).
 
+## Build Cluster Images
+
+Build the cluster images.
+
+```bash
+cd redhawk-cluster-gpp/
+docker build -t geontech/redhawk-cluster-gpp:2.2.5 .
+```
+
 ## Launch Compose-REDHAWK
 
 First initialize the SDRROOT Docker volume.
