@@ -1,0 +1,32 @@
+#==================================================================================================
+#! @file      docker-compose.yml
+#! @author    Geon Technologies (geon.tech)
+#! @copyright 2022 Geon Technologies, LLC. All rights reserved.
+#! @brief     A docker-compose file for standing up REDHAWK
+#==================================================================================================
+version: '3.4'
+volumes:
+  sdrroot:
+services:
+  omniserver:
+    image: "geontech/redhawk-omniserver:${RH_VERSION}"
+    network_mode: "host"
+  domain:
+    image: "geontech/redhawk-domain:${RH_VERSION}"
+    depends_on:
+      - omniserver
+    network_mode: "host"
+    volumes:
+      - sdrroot:/var/redhawk/sdr
+    environment:
+      - DOMAINNAME=${DOMAIN_NAME}
+      - OMNISERVICEIP=${HOSTNAME}
+  gpp:
+    image: "geontech/redhawk-cluster-gpp:${RH_VERSION}"
+    depends_on:
+      - domain
+    network_mode: "host"
+    environment:
+      - DOMAINNAME=${DOMAIN_NAME}
+      - OMNISERVICEIP=${HOSTNAME}
+      - NODENAME=MyGPP1
