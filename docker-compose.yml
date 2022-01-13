@@ -22,7 +22,7 @@ services:
       - DOMAINNAME=${DOMAIN_NAME}
       - OMNISERVICEIP=${HOSTNAME}
   gpp:
-    image: "geontech/redhawk-cluster-gpp:${RH_VERSION}"
+    image: "geontech/redhawk-gpp:${RH_VERSION}"
     depends_on:
       - domain
     network_mode: "host"

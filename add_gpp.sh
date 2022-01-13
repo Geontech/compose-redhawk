@@ -12,4 +12,4 @@ docker run --rm -d \
     -e NODENAME=MyGPP2 \
     --network host \
     --name docker_gpp_2 \
-    geontech/redhawk-cluster-gpp:${RH_VERSION}
+    geontech/redhawk-gpp:${RH_VERSION}
