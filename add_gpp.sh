@@ -11,5 +11,5 @@ docker run --rm -d \
     -e OMNISERVICEIP=$HOSTNAME \
     -e NODENAME=MyGPP2 \
     --network host \
-    --name docker_gpp_2 \
+    --name redhawk_gpp_2 \
     geontech/redhawk-gpp:${RH_VERSION}
