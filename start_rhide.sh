@@ -3,6 +3,7 @@
 #! @file      start_rhide.sh
 #! @author    Geon Technologies (geon.tech)
 #! @copyright 2022 Geon Technologies, LLC. All rights reserved.
+#! @license   GPLv3
 #! @brief     A convenience shell script for starting REDHAWK IDE attached to composed REDHAWK
 #==================================================================================================
 source .env

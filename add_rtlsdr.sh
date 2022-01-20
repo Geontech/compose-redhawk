@@ -3,6 +3,7 @@
 #! @file      add_rtlsdr.sh
 #! @author    Geon Technologies (geon.tech)
 #! @copyright 2022 Geon Technologies, LLC. All rights reserved.
+#! @license   GPLv3
 #! @brief     A convenience shell script for adding an RTLSDR to a composed REDHAWK
 #==================================================================================================
 source .env

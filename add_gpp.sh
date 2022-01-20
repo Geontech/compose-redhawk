@@ -3,6 +3,7 @@
 #! @file      add_gpp.sh
 #! @author    Geon Technologies (geon.tech)
 #! @copyright 2022 Geon Technologies, LLC. All rights reserved.
+#! @license   GPLv3
 #! @brief     A convenience shell script for adding a GPP to a composed REDHAWK
 #==================================================================================================
 source .env

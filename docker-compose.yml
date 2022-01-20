@@ -2,6 +2,7 @@
 #! @file      docker-compose.yml
 #! @author    Geon Technologies (geon.tech)
 #! @copyright 2022 Geon Technologies, LLC. All rights reserved.
+#! @license   GPLv3
 #! @brief     A docker-compose file for standing up REDHAWK
 #==================================================================================================
 version: '3.4'
